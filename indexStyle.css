@@ -69,7 +69,7 @@ li {
   font-size: 15px;
   text-shadow: 4px 4px 6px;
 }
-nav li:hover {
+nav li {
   cursor: pointer;
 }
 
@@ -142,6 +142,7 @@ nav li:hover {
 }
 
 #close {
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
@@ -186,4 +187,3 @@ footer i {
   height: 40px;
   font-size: 22px;
 }
-
