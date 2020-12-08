@@ -69,7 +69,7 @@ li {
   font-size: 15px;
   text-shadow: 4px 4px 6px;
 }
-nav ul li:hover {
+nav li:hover {
   cursor: pointer;
 }
 
