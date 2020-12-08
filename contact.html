@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="contactStyle.css" />
+    <script src="https://kit.fontawesome.com/95b61b6da6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Sansita+Swashed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class = "container">
+      <header>
+        <h1>
+          X-STYLE Shoes Shop Demo
+          <br />
+          <i class="fas fa-shoe-prints"></i>
+        </h1>
+
+        <img src="./images/women shoes1.jpg" alt="Loading..." />
+        <img src="./images/men shoes (1).jpg" alt="Loading..." />
+
+        <div class="clear"></div>
+
+        <a class="contact" href="./index.html"> Home</a>
+
+        <div class="clear"></div>
+      </header>
+
+      <main>
+        <h3>Contact Us</h3>
+        <p>
+          Please fill up the following forms and submit, our representatives will contact you in 3
+          business days.
+        </p>
+        <hr />
+
+        <form id = "contactForm" action="https://httpbin.org/post" method="POST" name="contactUs"
+              onsubmit="return contactFormValidation();" >
+          <label for="name">Your Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="contactName"
+            value=""
+            spellcheck="false"
+            required
+            autofocus
+            autocomplete="off"
+          />
+          <label for="email">Email Address:</label>
+          <input
+            id="email"
+            type="email"
+            name="contactEmail"
+            value=""
+            placeholder="someone@email.com"
+            spellcheck="false"
+            autocomplete="off"
+            required
+          />
+          <label for="address"> Address:</label>
+          <input
+            id="address"
+            type="text"
+            name="contactAddress"
+            value=""
+            autocomplete="off"
+            spellcheck="false"
+            required
+          />
+          <label for="city">City:</label>
+          <input
+            id="city"
+            type="text"
+            list="cityList"
+            name="contactCity"
+            value=""
+            placeholder="Click here to select"
+            spellcheck="false"
+            required
+            autocomplete="off"
+          />
+          <datalist id="cityList">
+            <option value="Toronto"></option>
+            <option value="Scarborough"></option>
+            <option value="Markham"></option>
+            <option value="RichmondHill"></option>
+            <option value="Hamilton"></option>
+            <option value="Mississauga"></option>
+            <option value="Vaughan"></option>
+            <option value="Newmarket"></option>
+          </datalist>
+
+          <label for="PosCode">Postal Code:</label>
+          <input
+            id="PosCode"
+            type="text"
+            name="contactPosCode"
+            value=""
+            autocomplete="off"
+            spellcheck="false"
+            required
+            pattern="^([a-zA-Z][0-9]){3}$"
+          />
+
+          <label for="contactForDiv">Contact For:</label>
+          <div id="contactForDiv" name = "contactForDiv">
+            <input
+              id="contactForQuestion" 
+              type="radio"
+              name="contactFor"
+              value="Question"
+              autocomplete="off"
+              onclick="radioQuestion();"
+            />
+            <label for="contactForQuestion">Question</label>
+
+            <input
+              id="contactForComment"
+              type="radio"
+              name="contactFor"
+              value="Comment"
+              autocomplete="off"
+              onclick="radioComment();"
+            />
+            <label for="contactForComment">Comment</label>
+            
+            <input
+              id="contactForOrder"
+              type="radio"
+              name="contactFor"
+              value="OrderProblem"
+              autocomplete="off"
+              onclick= "radioOrder();"
+            />
+            <label for="contactForOrder">Order Problem</label>
+          </div>
+
+          <label for="contactOrderNum" id="orderNumLabel">Order Number:</label>
+          <input
+            id="contactOrderNum"
+            type="text"
+            name="contactOrderNum"
+            value=""
+            autocomplete="off"
+          />
+
+
+          <label for="contactMessage">Your Message:</label>
+          <textarea
+            id="contactMessage"
+            name="contactMessage"
+            value=""
+            cols="70"
+            rows="10"
+            maxlength="2000"
+            required
+            autocomplete="off"
+          ></textarea>
+
+          <div id="contactHiddenDiv">
+          <input type="text" name="contactOwnerName" value="Liping Xiang" readonly hidden />
+          </div>
+
+          <div id = "contactSubmitDiv">
+          <input type="submit" value="Submit" /> &nbsp;
+          <input type="reset" value="Clear" />
+          </div>
+          
+        </form>
+
+        
+      </main>
+
+      <footer>
+        <p>X-STYLE Shoes Shop Demo</p>
+        <i class="fab fa-facebook"></i>
+
+        <form id = "subscribeForm" action="https://formspree.io/f/xgepljga" method="POST">
+          <label for="userEmail">Subscribe via Email:</label>
+          <input
+            id="userEmail"
+            type="email"
+            name="userEmail"
+            value=""
+            spellcheck="false"
+            autocomplete="off"
+            placeholder="someone@email.com"
+            required
+          />
+          <input id="subscribe" type="submit" value="Subscribe" />
+        </form>
+
+        <p>&copy Liping Xiang</p>
+
+        <a href="./reference.html">Assignment References</a>
+      </footer>
+    </div>  
+    <script src="./shoesData.js"></script>
+    <script src="./script.js"></script>
+
+    
+  </body>
+</html>

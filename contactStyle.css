@@ -1,0 +1,131 @@
+
+header h1 {
+  text-align: center;
+  background-color: lightblue;
+  width: 33.33%;
+  height: 180px;
+  float: left;
+  margin-top: 0px;
+  font-size: 35px;
+  font-family: 'Nerko One', cursive;
+  font-family: 'Sansita Swashed', cursive;
+  color: #0a043c;
+}
+
+header h1 i{
+position:absolute; 
+display:block;
+font-size:110x;
+color:rgb(95, 173, 199);
+text-shadow:4px 4px 6px #000000;
+}
+
+header img {
+  width: 33.33%;
+  height: 180px;
+  float: left;
+}
+
+header .contact{
+  float:right;
+  width: 20%;
+  display:block;
+  left: 900px;
+  background-color: #0b71e7;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  background-color: #bbbbbb;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+  font-size: 16px;
+}
+
+footer p {
+  display: inline;
+  font-size: 16px;
+}
+
+footer i {
+  width: 140px;
+  height: 40px;
+  font-size: 22px;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 1em;
+}
+
+#contactForm{
+  border:1px solid grey;
+  padding:1em;
+  margin-top:3em;
+  margin-bottom: 10em;
+  font-size: 16px;
+  max-width: 700px;
+  min-width: 400px;
+  margin-left:auto;
+  margin-right:auto;
+
+  display:grid;
+  grid-template-columns: 1fr 3fr ;
+  grid-gap:1.5em;
+  align-items: center;
+}
+
+#contactForDiv{
+  border: 1px solid black;
+  display: grid;
+  grid-row: gap 0em;;
+  grid-template-columns: repeat(3, 1fr 6fr);
+}
+
+#orderNumLabel,#contactOrderNum{
+  display:none;
+}
+
+#contactHiddenDiv{
+  grid-column: 1/3;
+}
+
+#contactSubmitDiv{
+  grid-column: 2/3;
+  text-align: right;
+}
+
+input[type = "submit"],
+input[type = "reset"] {
+  background-color:#03506f;
+  color: white;
+  width: 80px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+#contactForDiv:focus-visible{
+  outline:2px solid blue;
+}
+
+textarea{
+  font-size: 1.1em;
+}
+
+
+

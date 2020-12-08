@@ -1,0 +1,191 @@
+/* Add any CSS you need to this file. */
+
+* {
+  box-sizing: border-box;
+}
+header h1 {
+  text-align: center;
+  background-color: lightblue;
+  width: 33.33%;
+  height: 180px;
+  float: left;
+  margin-top: 0px;
+  font-size: 35px;
+  font-family: 'Nerko One', cursive;
+  font-family: 'Sansita Swashed', cursive;
+  color: #0a043c;
+}
+
+header h1 i {
+  position: absolute;
+  display: block;
+  font-size: 110x;
+  color: rgb(95, 173, 199);
+  text-shadow: 4px 4px 6px #000000;
+}
+
+header img {
+  width: 33.33%;
+  height: 180px;
+  float: left;
+}
+
+header .contact {
+  float: right;
+  width: 20%;
+  display: block;
+  left: 900px;
+  background-color: #0b71e7;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+#navList {
+  border: 3px solid;
+  margin: 10px;
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.2em;
+}
+
+li {
+  background-color: #03506f;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  text-align: center;
+  list-style-type: none;
+  font-size: 15px;
+  text-shadow: 4px 4px 6px;
+}
+nav ul li:hover {
+  cursor: pointer;
+}
+
+#CategoryText {
+  position: relative;
+  top: 20px;
+  border: 1px solid;
+  margin-left: 100px;
+  width: 2200px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+#cards {
+  height: 1600px;
+  padding: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 20%);
+  grid-column-gap: 3em;
+}
+#cards figure {
+  margin: 0;
+}
+
+#cards figure img {
+  cursor: pointer;
+  width: 100%;
+  height: 70%;
+}
+
+.figcaption1 {
+  border: 0px solid;
+  text-align: center;
+}
+
+.figcaption2 {
+  text-align: center;
+  visibility: hidden;
+  background-color: rgb(235, 245, 195);
+  font-size: 14px;
+  border: 2px solid;
+  border-radius: 2px;
+  position: relative;
+  top: -100px;
+}
+
+#cards figure:hover .figcaption2 {
+  visibility: visible;
+}
+
+#popupWindow {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 200px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+#popupImage {
+  max-width: 400px;
+  max-height: 400px;
+  background-size: cover;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  background-color: rgb(241, 3, 3);
+}
+
+#popCover {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(230, 227, 227, 0.75);
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+}
+
+footer {
+  background-color: #bbbbbb;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 100px;
+  height: 30px;
+  font-size: 16px;
+}
+
+footer p {
+  display: inline;
+  font-size: 16px;
+}
+
+footer i {
+  width: 140px;
+  height: 40px;
+  font-size: 22px;
+}
+#subscribe{
+
+}
